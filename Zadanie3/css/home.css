@@ -1,0 +1,59 @@
+body{
+    background-color: #131011;
+    /* background-image: url(wallpaper.jpeg); */
+    /* overflow: hidden;
+    position: relative; */
+}
+h1{
+    color: black;
+}
+img{
+    width: 40em;
+    height: 25em;
+}
+#nadpis{
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Parisienne', cursive; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px !important;
+    /* color: black !important;             */
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+#instagram{
+    display: flex;
+    float: right;
+}
+svg{
+ color: black;                          /* */
+    
+}
+header{
+    text-align: center;
+}
+
+svg:hover{
+    color: rgb(50, 214, 243) !important;
+}
+.tovar{
+    width: 250px;
+    height: 250px;
+}
+.tovar:hover{   
+    transform: scale(1.5);
+}
+/* .demo-bg {
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  } */
+  .cierna{
+      color: black;
+  }
+  .splide__slide img {
+	width : auto;
+}

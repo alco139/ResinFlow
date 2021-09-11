@@ -1,0 +1,113 @@
+body{
+     background-color: #181818; 
+    /* background-image: url(../images/wallpaper.jpeg); */
+    opacity: 1;
+}
+.formDiv{
+    margin-top: 60px;
+    border-radius: 25px;
+    /* background-color: black; */
+    /* color: white; */
+}
+input{
+    background-color: #ffffffd2 !important; 
+    color: black !important;
+}
+
+#button{
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.tovar{
+    width: 80%;
+    height: 80%;
+    /* float: inline-end; */
+}
+.tovar2{
+    width: 55%;
+    height: 55%;
+    /* float: inline-end; */
+}
+.tovar:hover, .tovar2:hover{   
+    transform: scale(1.5);
+}
+
+
+.img-checkbox{
+    display: block;
+}
+/* img{
+    width: 200px !important;
+    height: 200px !important;
+} */
+
+.flex1{
+    display: flex;
+    justify-content: center;
+}
+.flex2{
+    display: flex;
+    justify-content: center;
+
+} 
+.flex3{
+    display: flex;
+    justify-content: center;
+}
+.meno{
+    display: flex;
+}
+.krajina{
+    display: flex;
+}
+.adresa{
+    display: flex;
+}
+.ownDesign{
+    display: none;
+}
+#pozlatka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vyberPozlatka{
+    width: 75%;
+}
+#margarety{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vyberMargaretok{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#ovocie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pigment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vyberPigmentov{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.ilustracia{
+    width: 80%;
+    height: 80%;
+}
+#textKlucenka{
+    display: none;
+}
+#upozornenieText{
+    display: none;
+}

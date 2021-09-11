@@ -1,0 +1,43 @@
+body{
+    /* background-color: #880e4f; */
+    background-image: url(../images/wallpaper.jpeg);
+    opacity: 1;
+}
+.formDiv{
+    margin-top: 60px;
+    border-radius: 25px;
+    /* background-color: black; */
+    /* color: white; */
+}
+input{
+    background-color: #ffffff !important; 
+    color: black !important;
+}
+
+#button{
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.tovar{
+    width: 60%;
+    height: 60%;
+    /* float: inline-end; */
+}
+.tovar:hover{   
+    transform: scale(1.5);
+}
+
+.img-checkbox{
+    display: none;
+}
+ .flex1{
+    display: flex;
+    justify-content: center;
+}
+.flex2{
+    display: flex;
+    justify-content: center;
+
+} 
+
