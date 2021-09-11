@@ -15,30 +15,33 @@
 
 <body>
 
-  <div class="container text-center formDiv pt-5">
+  <div class="container-fluid text-center formDiv pt-5">
     <form action="mailto:alco139@gmail.com" method="POST" enctype="text/plain">
       <div class="row" style="color: white;">
         <div class="col-md-1 mt-4"></div>
 
         <div class="col-md-10">
 
-          <div class="meno">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="name">Meno *</label>
-                <input type="text" name="name" class="form-control" id="name" onblur="nameValidation()" required>
-                <p id="nameHelp"></p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Meno *</label>
+                  <input type="text" name="name" class="form-control" id="name" onblur="nameValidation()" required>
+                  <p id="nameHelp"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="surname">Priezvisko *</label>
+                  <input type="text" name="surname" class="form-control" id="surname" onblur="surnameValidation()"
+                    required>
+                  <p id="surHelp"></p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="surname">Priezvisko *</label>
-                <input type="text" name="surname" class="form-control" id="surname" onblur="surnameValidation()"
-                  required>
-                <p id="surHelp"></p>
-              </div>
-            </div>
-          </div>
+
+           
 
           <div class="krajina">
             <div class="col-md-6">
