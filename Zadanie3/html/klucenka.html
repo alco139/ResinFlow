@@ -4,6 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Formulár</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,7 +23,7 @@
 
         <div class="col-md-10">
 
-
+          
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -43,7 +44,7 @@
 
            
 
-          <div class="krajina">
+          <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label for="krajina">Krajina *</label>
@@ -58,93 +59,118 @@
             </div>
           </div>
 
-          <div class="adresa">
-            <div class="col-md-8">
-              <div class="form-group">
-                <label for="ulica">Ulica *</label>
-                <input type="text" name="ulica" class="form-control" id="ulica" required>
+         <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="ulica">Ulica *</label>
+              <input type="text" name="ulica" class="form-control" id="ulica" required>
 
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="form-group">
-                <label for="cislo_domu">Číslo domu *</label>
-                <input type="text" name="číslo_domu" class="form-control" id="cislo_domu" required>
-
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="form-group">
-                <label for="psc">PSČ *</label>
-                <input type="text" name="psč" class="form-control" id="psc" required>
-
-              </div>
             </div>
           </div>
+         </div>
+      
 
-          <div class="email">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" name="email"
-                  pattern="^[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,4}|[.]{1}[a-zA-Z]{2,4}[.]{1}[a-zA-Z]{2,4})$"
-                  class="form-control" id="email" onchange="emailValidation()" required>
-                <p id="emailHelp"></p>
+            <div class="row">
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="cislo_domu">Číslo domu *</label>
+                    <input type="text" name="číslo_domu" class="form-control" id="cislo_domu" required>
+    
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="form-group">
+                    <label for="psc">PSČ *</label>
+                    <input type="text" name="psč" class="form-control" id="psc" required>
+    
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+      
+            
+<div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" name="email"
+          pattern="^[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,4}|[.]{1}[a-zA-Z]{2,4}[.]{1}[a-zA-Z]{2,4})$"
+          class="form-control" id="email" onchange="emailValidation()" required>
+        <p id="emailHelp"></p>
+      </div>
+    </div>
+</div>
+          
 
-          <div class="col">
             <div id="inspiracie">
               <div class="form-check">
                 <h2>Vyberte si z našich inšpirácií</h2>
-                <div class="flex1">
-                  <div class="radio">
-                    <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
-                        id="klucenka-img" src="../images/image00001.jpeg" /></label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
+                          id="klucenka-img" src="../images/image00001.jpeg" /></label>
+                    </div>
                   </div>
-                  <div class="radio ml-5">
-                    <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
-                        id="hreben-img" src="../images/image00002.jpeg" /></label>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00002.jpeg" /></label>
+                    </div>
                   </div>
-                  <div class="radio ml-5">
-                    <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
-                        id="hreben-img" src="../images/image00003.jpeg" /></label>
-                  </div>
-                </div>
-                <div class="flex2">
-                  <div class="radio">
-                    <label><input type="checkbox" name="tovar" value="Zalozka" class="img-checkbox"><img class="tovar"
-                        id="zalozka-img" src="../images/image00004.jpeg" /></label>
-                  </div>
-                  <div class="radio ml-5">
-                    <label><input type="checkbox" name="tovar" value="Popolnik" class="img-checkbox"><img class="tovar"
-                        id="popolnik-img" src="../images/image00005.jpeg" /></label>
-                  </div>
-                  <div class="radio ml-5">
-                    <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
-                        id="hreben-img" src="../images/image00006.jpeg" /></label>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00003.jpeg" /></label>
+                    </div>
                   </div>
                 </div>
-                <div class="flex3">
-                  <div class="radio">
-                    <label><input type="checkbox" name="tovar" value="Zalozka" class="img-checkbox"><img class="tovar"
-                        id="zalozka-img" src="../images/image00007.jpeg" /></label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
+                          id="klucenka-img" src="../images/image00004.jpeg" /></label>
+                    </div>
                   </div>
-                  <div class="radio ml-5">
-                    <label><input type="checkbox" name="tovar" value="Popolnik" class="img-checkbox"><img class="tovar"
-                        id="popolnik-img" src="../images/image00008.jpeg" /></label>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00005.jpeg" /></label>
+                    </div>
                   </div>
-                  <div class="radio ml-5">
-                    <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
-                        id="hreben-img" src="../images/image00009.jpeg" /></label>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00006.jpeg" /></label>
+                    </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
+                          id="klucenka-img" src="../images/image00007.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00008.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00009.jpeg" /></label>
+                    </div>
+                  </div>
+                </div>
+               
+              
               </div>
 
 
             </div>
-          </div>
+          
           <div class="radio">
             <label><input type="button" onclick="showDesign()" class="btn btn-dark">
               <h4>Vlastný dizajn</h4>
@@ -268,7 +294,11 @@
         </div>
         <div class="col-md-1 mt-4"></div>
       </div>
-      <button id="button" type="submit" class="btn btn-dark">Odoslať</button>
+      <div class="container">
+        <div class="row text-center">
+          <button id="button" type="submit" class="btn btn-dark">Odoslať</button>
+        </div>
+      </div>
     </form>
   </div>
 

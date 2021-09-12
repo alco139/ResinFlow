@@ -56,9 +56,11 @@ input{
     justify-content: center;
 }
 
-.krajina{
-    display: flex;
-}
+@media only screen and (max-width: 600px) {
+    .formDiv {
+      margin-top: 0;
+    }
+  }
 .adresa{
     display: flex;
 }
@@ -109,3 +111,10 @@ input{
 #upozornenieText{
     display: none;
 }
+
+@media only screen and (max-width: 750px) {
+    .tovar2 {
+        width: 80%;
+        height: 80%;
+    }
+  }
