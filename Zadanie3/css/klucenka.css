@@ -68,6 +68,14 @@ input{
         align-items: flex-start;
         margin-left: 0 !important;
     }
+    .vyberOvocia{
+    margin-left: 0 !important;
+    display: grid !important;
+    grid-auto-flow: row !important;
+    grid-template-columns: 30% 30% !important;
+    padding: 10px;
+    }
+    
   }
 
   @media only screen and (min-width: 800px) {
@@ -78,6 +86,9 @@ input{
     }
     .tovar:hover, .tovar2:hover{   
         transform: scale(1.5);
+    }
+    .margaretky{
+        font-size: 2em !important;
     }
     
   }
@@ -105,7 +116,29 @@ input{
     align-items: flex-start;
     margin-left: 30%;
 }
+.vyberOvocia{
+    margin-left: 40%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 100px 100px;
+    padding: 10px;
+}
+.relative{
+    position: relative;
+}
+.absolute{  
+    margin-left: 40%;
+    display: grid;
+    position: absolute;
+    top: 10%;
+    grid-auto-flow: row;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    padding: 10px;
+    
+    
 
+}
 #ovocie{
     display: flex;
     align-items: center;
@@ -124,6 +157,9 @@ input{
 .ilustracia{
     width: 80%;
     height: 80%;
+}
+.kvet{
+    margin-left: 10% !important;
 }
 #textKlucenka{
     display: none;

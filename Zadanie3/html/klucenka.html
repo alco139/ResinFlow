@@ -202,20 +202,27 @@
             <div id="margarety" class="mt-5">
 
               <div class="col-md-6">
-                <img class="ilustracia" src="../images/image00017.jpeg" alt="">
+                <img id="bledoruzova-margaretka" class="ilustracia kvet" src="../images/image00017.jpeg" alt="">
+                <img id="zlta-margaretka" class="ilustracia kvet" src="../images/image00038.jpeg" alt="">
+                <img id="biela-margaretka" class="ilustracia kvet" src="../images/image00018.jpeg" alt="">
+                <img id="cervena-margaretka" class="ilustracia kvet" src="../images/image00013.jpeg" alt="">
+                <img id="tyrkysova-margaretka" class="ilustracia kvet" src="../images/image00014.jpeg" alt="">
+                <img id="modra-margaretka" class="ilustracia kvet" src="../images/image00015.jpeg" alt="">
+                <img id="ruzova-margaretka" class="ilustracia kvet" src="../images/image00016.jpeg" alt="">
+                <img id="zelena-margaretka" class="ilustracia kvet" src="../images/image00038.jpeg" alt="">
               </div>
               <div class="col-md-6">
                 <div class="vyberMargaretok">
-                  <label style="font-size: 2em;"><input type="checkbox" class="check" name="Margareta" value="zlta" /> Žltá</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="zelena" /> Zelená</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="tmavo_ruzova" /> Tmavo
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="zlta" onchange="changeImage('zlta')"/> Žltá</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="zelena" onchange="changeImage('zelena')" /> Zelená</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tmavo_ruzova" onchange="changeImage('ruzova')" /> Tmavo
                     ružová</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="bledo_ruzova" /> Bledo
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="bledo_ruzova" onchange="changeImage('bledoruzova')" /> Bledo
                     ružová</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="cervena" /> Červená</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="tmavo_modra" /> Tmavo modrá</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="tyrkys" /> Tyrkysová</label>
-                  <label><input type="checkbox" class="check" name="Margareta" value="biela" /> Biela</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="cervena" onchange="changeImage('cervena')" /> Červená</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tmavo_modra" onchange="changeImage('modra')" /> Tmavo modrá</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tyrkys" onchange="changeImage('tyrkys')" /> Tyrkysová</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="biela" onchange="changeImage('biela')" /> Biela</label>
                   </select>
                 </div>
               </div>
@@ -229,18 +236,48 @@
               </div>
               <div class="col-md-6">
                 <div class="vyberOvocia">
-                  <label><input type="checkbox" class="check" name="Ovocie" value="zlta" />1</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="zelena" /> 2</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="tmavo_ruzova" />3</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="bledo_ruzova" />4</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="cervena" />5</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="tmavo_modra" />6</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="tyrkys" />7</label>
-                  <label><input type="checkbox" class="check" name="Ovocie" value="biela" />8</label>
-                  </select>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="zlta" /> 1</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="zelena" /> 2</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tmavo_ruzova" /> 3</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="bledo_ruzova" /> 4</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="cervena" /> 5</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tmavo_modra" /> 6</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tyrkys" /> 7</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="biela" /> 8</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="cervena" /> 9</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tmavo_modra" /> 10</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tyrkys" /> 11</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="biela" /> 12</label>
+                
                 </div>
               </div>
             </div>
+
+            <!-- <div class="mt-5">
+
+              <div class="col-md-12">
+                <div class="relative"> 
+                  <img class="ilustracia" src="../images/image0.jpeg" alt="">
+                  <div class="absolute">
+                
+                      <label class="margaretky"><input type="checkbox" class="check melon" name="Ovocie" value="melon" /> 1</label>
+                      <label class="margaretky"><input type="checkbox" class="check banan" name="Ovocie" value="banan" /> 2</label>
+                      <label class="margaretky"><input type="checkbox" class="check jalbko" name="Ovocie" value="jalbko" /> 3</label>
+                      <label class="margaretky"><input type="checkbox" class="check dragon" name="Ovocie" value="dragon" /> 4</label>
+                      <label class="margaretky"><input type="checkbox" class="check kiwi" name="Ovocie" value="kiwi" /> 5</label>
+                      <label class="margaretky"><input type="checkbox" class="check citron" name="Ovocie" value="citron" /> 6</label>
+                      <label class="margaretky"><input type="checkbox" class="check limetka" name="Ovocie" value="limetka" /> 7</label>
+                      <label class="margaretky"><input type="checkbox" class="check jahoda" name="Ovocie" value="jahoda" /> 8</label>
+                      <label class="margaretky"><input type="checkbox" class="check pomaranc" name="Ovocie" value="pomaranc" /> 9</label>
+                      <label class="margaretky"><input type="checkbox" class="check cucoriedky" name="Ovocie" value="cucoriedky" /> 10</label>
+                      <label class="margaretky"><input type="checkbox" class="check jahodky" name="Ovocie" value="jahodky" /> 11</label>
+                      <label class="margaretky"><input type="checkbox" class="check grep" name="Ovocie" value="grep" /> 12</label>
+                    
+                  
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
             <h4 class="mt-3">Výber mermaid</h4>
             <div id="ovocie" class="mt-5">
