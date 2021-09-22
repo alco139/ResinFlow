@@ -20,17 +20,14 @@ input{
     margin-bottom: 5%;
 }
 .tovar{
-    width: 80%;
-    height: 80%;
+    width: 65%;
+    height: 65%;
     /* float: inline-end; */
 }
 .tovar2{
     width: 55%;
     height: 55%;
     /* float: inline-end; */
-}
-.tovar:hover, .tovar2:hover{   
-    transform: scale(1.5);
 }
 
 
@@ -60,6 +57,29 @@ input{
     .formDiv {
       margin-top: 0;
     }
+    .ilustracia{
+        width: 80%;
+        height: 80%;
+    }
+    .vyberMargaretok{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 0 !important;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    
+    .ilustracia{
+        width: 80% !important;
+        height: 80% !important;
+    }
+    .tovar:hover, .tovar2:hover{   
+        transform: scale(1.5);
+    }
+    
   }
 .adresa{
     display: flex;
@@ -72,9 +92,7 @@ input{
     align-items: center;
     justify-content: center;
 }
-.vyberPozlatka{
-    width: 75%;
-}
+
 #margarety{
     display: flex;
     align-items: center;
@@ -84,6 +102,8 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30%;
 }
 
 #ovocie{

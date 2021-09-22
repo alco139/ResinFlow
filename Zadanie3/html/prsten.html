@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Formulár</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/klucenka.css" />
+
+
+</head>
+
+<body>
+
+  <div class="container text-center formDiv pt-5">
+    <form action="mailto:alco139@gmail.com" method="POST" enctype="text/plain">
+      <div class="row" style="color: white;">
+        <div class="col-md-1 mt-4"></div>
+
+        <div class="col-md-10">
+
+          
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Meno *</label>
+                  <input type="text" name="name" class="form-control" id="name" onblur="nameValidation()" required>
+                  <p id="nameHelp"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="surname">Priezvisko *</label>
+                  <input type="text" name="surname" class="form-control" id="surname" onblur="surnameValidation()"
+                    required>
+                  <p id="surHelp"></p>
+                </div>
+              </div>
+            </div>
+
+           
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="krajina">Krajina *</label>
+                <input type="text" name="krajina" class="form-control" id="krajina" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="mesto">Mesto *</label>
+                <input type="text" name="mesto" class="form-control" id="mesto" required>
+              </div>
+            </div>
+          </div>
+
+         <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="ulica">Ulica *</label>
+              <input type="text" name="ulica" class="form-control" id="ulica" required>
+
+            </div>
+          </div>
+         </div>
+      
+
+            <div class="row">
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="cislo_domu">Číslo domu *</label>
+                    <input type="text" name="číslo_domu" class="form-control" id="cislo_domu" required>
+    
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="form-group">
+                    <label for="psc">PSČ *</label>
+                    <input type="text" name="psč" class="form-control" id="psc" required>
+    
+                  </div>
+                </div>
+              </div>
+      
+            
+<div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" name="email"
+          pattern="^[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,4}|[.]{1}[a-zA-Z]{2,4}[.]{1}[a-zA-Z]{2,4})$"
+          class="form-control" id="email" onchange="emailValidation()" required>
+        <p id="emailHelp"></p>
+      </div>
+    </div>
+</div>
+          
+
+            <div id="inspiracie">
+              <div class="form-check">
+                <h2>Vyberte si z našich inšpirácií</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
+                          id="klucenka-img" src="../images/image00001.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00002.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00003.jpeg" /></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
+                          id="klucenka-img" src="../images/image00004.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00005.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00006.jpeg" /></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Klucenka" class="img-checkbox"><img class="tovar"
+                          id="klucenka-img" src="../images/image00007.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00008.jpeg" /></label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <label><input type="checkbox" name="tovar" value="Hreben" class="img-checkbox"><img class="tovar"
+                          id="hreben-img" src="../images/image00009.jpeg" /></label>
+                    </div>
+                  </div>
+                </div>
+               
+              
+              </div>
+
+
+            </div>
+          
+          <div class="radio">
+            <label><input type="button" onclick="showDesign()" class="btn btn-dark">
+              <h4>Vlastný dizajn</h4>
+            </label>
+          </div>
+          <div class="ownDesign" id="ownDesign">
+
+            <h4>Výber pozlátok</h4>
+            <div id="pozlatka">
+
+              <div class="col-md-6">
+                <img class="ilustracia" src="../images/image00028.jpeg" alt="">
+              </div>
+              <div class="col-md-6">
+                <div class="vyberPozlatka">
+                  <select class="form-control selcls pozlatka" name="druh_pozlatka" id="druh-pozlatka">
+                    <option value="ziadne" selected>Žiadne</option>
+                    <option value="zlato">Zlaté</option>
+                    <option value="striebro">Strieborné</option>
+                    <option value="modre">Modré</option>
+                    <option value="medene">Medené</option>
+                  </select>
+                </div>
+              </div>
+
+
+            </div>
+            <h4 class="mt-3">Farebné varianty</h4>
+            <div id="margarety" class="mt-5">
+
+              <div class="col-md-6">
+                <img class="ilustracia" src="../images/image00012.jpeg" alt="">
+              </div>
+              <div class="col-md-6">
+                <div class="vyberPozlatka">
+                    <select class="form-control selcls pozlatka" name="farba" id="farba">
+                      <option value="ziadne" selected>Ružový</option>
+                      <option value="zlato">Modrý</option>
+                      <option value="striebro">Červený</option>
+                      <option value="modre">Fialový</option>
+                      <option value="medene">Zelený</option>
+                      <option value="medene">Biely</option>
+                      <option value="medene">Prírodný</option>
+                    </select>
+                  </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+        <div class="col-md-1 mt-4"></div>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <button id="button" type="submit" class="btn btn-dark">Odoslať</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

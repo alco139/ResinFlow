@@ -5,7 +5,7 @@ for (var i = 0; i < checks.length; i++)
   checks[i].onclick = selectiveCheck;
 
   var checks = document.querySelectorAll(".pigment");
-  var max = 3;
+  var max = 2;
   for (var i = 0; i < checks.length; i++)
     checks[i].onclick = pigmentCheck;
 

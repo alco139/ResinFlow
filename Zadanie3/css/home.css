@@ -8,9 +8,16 @@ h1{
     color: black;
 }
 img{
-    width: 40em;
-    height: 25em;
+    width: 25em;
+    height: 30em;
 }
+@media only screen and (max-width: 600px) {
+    .splide__slide img {
+        width : 30em;
+        height: 35em;
+    }
+  }
+
 #nadpis{
     /* font-family: 'Caveat', cursive; */
     /* font-family: 'Parisienne', cursive; */
@@ -54,6 +61,7 @@ svg:hover{
   .cierna{
       color: black;
   }
-  .splide__slide img {
-	width : auto;
-}
+  .splide__pagination{
+    top:100%;
+  }
+ 
