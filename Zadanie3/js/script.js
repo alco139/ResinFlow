@@ -15,7 +15,7 @@ for (i = 0; i < images.length; i++) {
     console.log("schovane")
     images[i].style.display = "none";
 }
-document.getElementById("ruzova-margaretka").style.display = 'block';
+// document.getElementById("ruzova-margaretka").style.display = 'block';
 
 
 function selectiveCheck(event) {
@@ -63,7 +63,12 @@ function emailValidation() {
 }
 
 function showDesign() {
-    document.getElementById("ownDesign").style.display = 'block';
+    if(document.getElementById("ownDesign").style.display == 'block'){
+        document.getElementById("ownDesign").style.display = 'none';
+    }
+    else{
+        document.getElementById("ownDesign").style.display = 'block';
+    }
 
 }
 

@@ -85,7 +85,7 @@ input{
         height: 80% !important;
     }
     .tovar:hover, .tovar2:hover{   
-        transform: scale(1.5);
+        /* transform: scale(1.5); */
     }
     .margaretky{
         font-size: 2em !important;
@@ -174,3 +174,48 @@ input{
         height: 80%;
     }
   }
+
+  /* toggle in label designing */
+  .toggle {
+    position : relative ;
+    display : inline-block;
+    width : 75px;
+    height : 40px;
+    background-color: #181818;
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+        
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 37.5px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+    top: 0; 
+    left: 0;
+    transition:  all 0.5s;
+}
+        
+/* Toggle text */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+        
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 37px; 
+}
+        
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: rgb(0, 240, 240);
+}
+        
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+}
