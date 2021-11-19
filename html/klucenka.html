@@ -17,7 +17,7 @@
 <body>
 
   <div class="container text-center formDiv pt-5">
-    <form action="mailto:alco139@gmail.com" method="POST" enctype="text/plain">
+    <form action="../php/email_klucenka.php" method="post">
       <div class="row" style="color: white;">
         <div class="col-md-1 mt-4"></div>
 
@@ -74,14 +74,14 @@
                 <div class="col-4">
                   <div class="form-group">
                     <label for="cislo_domu">Číslo domu *</label>
-                    <input type="text" name="číslo_domu" class="form-control" id="cislo_domu" required>
+                    <input type="text" name="cislo_domu" class="form-control" id="cislo_domu" required>
     
                   </div>
                 </div>
                 <div class="col-8">
                   <div class="form-group">
                     <label for="psc">PSČ *</label>
-                    <input type="text" name="psč" class="form-control" id="psc" required>
+                    <input type="text" name="psc" class="form-control" id="psc" required>
     
                   </div>
                 </div>
@@ -215,16 +215,16 @@
               </div>
               <div class="col-md-6">
                 <div class="vyberMargaretok">
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="zlta" onchange="changeImage('zlta')"/> Žltá</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="zelena" onchange="changeImage('zelena')" /> Zelená</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tmavo_ruzova" onchange="changeImage('ruzova')" /> Tmavo
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="zlta" onchange="changeImage('zlta')"/> Žltá</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="zelena" onchange="changeImage('zelena')" /> Zelená</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="tmavo_ruzova" onchange="changeImage('ruzova')" /> Tmavo
                     ružová</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="bledo_ruzova" onchange="changeImage('bledoruzova')" /> Bledo
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="bledo_ruzova" onchange="changeImage('bledoruzova')" /> Bledo
                     ružová</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="cervena" onchange="changeImage('cervena')" /> Červená</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tmavo_modra" onchange="changeImage('modra')" /> Tmavo modrá</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tyrkys" onchange="changeImage('tyrkys')" /> Tyrkysová</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="biela" onchange="changeImage('biela')" /> Biela</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="cervena" onchange="changeImage('cervena')" /> Červená</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="tmavo_modra" onchange="changeImage('modra')" /> Tmavo modrá</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="tyrkys" onchange="changeImage('tyrkys')" /> Tyrkysová</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="biela" onchange="changeImage('biela')" /> Biela</label>
                   </select>
                 </div>
               </div>
@@ -238,18 +238,18 @@
               </div>
               <div class="col-md-6">
                 <div class="vyberOvocia">
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="zlta" /> 1</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="zelena" /> 2</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tmavo_ruzova" /> 3</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="bledo_ruzova" /> 4</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="cervena" /> 5</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tmavo_modra" /> 6</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tyrkys" /> 7</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="biela" /> 8</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="cervena" /> 9</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tmavo_modra" /> 10</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="tyrkys" /> 11</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Ovocie" value="biela" /> 12</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="zlta" /> 1</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="zelena" /> 2</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="tmavo_ruzova" /> 3</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="bledo_ruzova" /> 4</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="cervena" /> 5</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="tmavo_modra" /> 6</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="tyrkys" /> 7</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="biela" /> 8</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="cervena" /> 9</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="tmavo_modra" /> 10</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="tyrkys" /> 11</label>
+                  <label class="margaretky"><input type="checkbox" class="ovocie" name="Ovocie[]" value="biela" /> 12</label>
                 
                 </div>
               </div>
@@ -318,9 +318,9 @@
 
               <div class="col-md-12">
                 <h5>Želáte si text do kľúčenky?</h5>
-                <input class="m-3" type="radio" name="text" id="textYes" onclick="showText()"><label for="">Áno</label>
-                <input class="m-3" type="radio" name="text" id="textNo" onclick="hideText()"><label for="">Nie</label>
-                <input class="form-control" type="textarea" id="textKlucenka" onkeyup="controlText()">
+                <input class="m-3" type="radio"  id="textYes" onclick="showText()"><label for="">Áno</label>
+                <input class="m-3" type="radio"  id="textNo" onclick="hideText()"><label for="">Nie</label>
+                <input class="form-control" name="text" type="textarea" id="textKlucenka" onkeyup="controlText()">
                 <p id="upozornenieText">Maximálne 7 znakov</p>
                 <p id="klucenkaHelp"></p>
               </div>

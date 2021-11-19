@@ -17,7 +17,7 @@
 <body>
 
   <div class="container text-center formDiv pt-5">
-    <form action="mailto:alco139@gmail.com" method="POST" enctype="text/plain">
+    <form action="../php/email_zalozka.php" method="post">
       <div class="row" style="color: white;">
         <div class="col-md-1 mt-4"></div>
 
@@ -73,14 +73,14 @@
             <div class="col-4">
               <div class="form-group">
                 <label for="cislo_domu">Číslo domu *</label>
-                <input type="text" name="číslo_domu" class="form-control" id="cislo_domu" required>
+                <input type="text" name="cislo_domu" class="form-control" id="cislo_domu" required>
 
               </div>
             </div>
             <div class="col-8">
               <div class="form-group">
                 <label for="psc">PSČ *</label>
-                <input type="text" name="psč" class="form-control" id="psc" required>
+                <input type="text" name="psc" class="form-control" id="psc" required>
 
               </div>
             </div>
@@ -106,26 +106,26 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="radio">
-                    <label><input type="checkbox" name="Hreben" value="Ocean" class="img-checkbox"><img class="tovar"
-                        id="klucenka-img" src="../images/image00027.jpeg" /></label>
+                    <label><input type="checkbox" name="Zalozka" value="Ocean" class="img-checkbox"><img class="tovar"
+                        id="klucenka-img" src="../images/image00025.jpeg" /></label>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="radio">
-                    <label><input type="checkbox" name="Hreben" value="Priroda" class="img-checkbox"><img class="tovar"
-                        id="hreben-img" src="../images/image00029.jpeg" /></label>
+                    <label><input type="checkbox" name="Zalozka" value="Priroda" class="img-checkbox"><img class="tovar"
+                        id="hreben-img" src="../images/image00024.jpeg" /></label>
                   </div>
                 </div>
                 <div class="col-md-4">
+
                   <div class="radio">
-                    <label><input type="checkbox" name="Hreben" value="Luxury" class="img-checkbox"><img class="tovar"
-                        id="hreben-img" src="../images/image00036.jpeg" /></label>
+                    <label><input type="checkbox" name="Zalozka" value="Luxury" class="img-checkbox"><img class="tovar"
+                        id="hreben-img" src="../images/image00039.jpeg" /></label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
           <h1>Vlastný dizajn</h1>
           <input type="checkbox" id="switch"
                       class="checkbox"  onclick="showDesign()"/>
@@ -169,16 +169,16 @@
               </div>
               <div class="col-md-6">
                 <div class="vyberMargaretok">
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="zlta" onchange="changeImage('zlta')"/> Žltá</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="zelena" onchange="changeImage('zelena')" /> Zelená</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tmavo_ruzova" onchange="changeImage('ruzova')" /> Tmavo
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="zlta" onchange="changeImage('zlta')"/> Žltá</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="zelena" onchange="changeImage('zelena')" /> Zelená</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="tmavo_ruzova" onchange="changeImage('ruzova')" /> Tmavo
                     ružová</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="bledo_ruzova" onchange="changeImage('bledoruzova')" /> Bledo
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="bledo_ruzova" onchange="changeImage('bledoruzova')" /> Bledo
                     ružová</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="cervena" onchange="changeImage('cervena')" /> Červená</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tmavo_modra" onchange="changeImage('modra')" /> Tmavo modrá</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="tyrkys" onchange="changeImage('tyrkys')" /> Tyrkysová</label>
-                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta" value="biela" onchange="changeImage('biela')" /> Biela</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="cervena" onchange="changeImage('cervena')" /> Červená</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="tmavo_modra" onchange="changeImage('modra')" /> Tmavo modrá</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="tyrkys" onchange="changeImage('tyrkys')" /> Tyrkysová</label>
+                  <label class="margaretky"><input type="checkbox" class="check" name="Margareta[]" value="biela" onchange="changeImage('biela')" /> Biela</label>
                   </select>
                 </div>
               </div>
@@ -192,14 +192,14 @@
               </div>
               <div class="col-md-6">
                 <div class="vyberMargaretok">
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Biely" /> Biely</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Cierny" /> Čierny</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Modry" /> Modrý</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Zlaty" /> Zlatý</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Strieborny" /> Strieborný</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Ruzovy" /> Ružový</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Medeny" /> Medený</label>
-                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment" value="Fialovy" /> Fialový</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Biely" /> Biely</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Cierny" /> Čierny</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Modry" /> Modrý</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Zlaty" /> Zlatý</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Strieborny" /> Strieborný</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Ruzovy" /> Ružový</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Medeny" /> Medený</label>
+                  <label class="margaretky"><input type="checkbox" class="pigment" name="pigment[]" value="Fialovy" /> Fialový</label>
                  
                 </div>
               </div>
@@ -210,10 +210,10 @@
             <div id="ovocie" class="mt-5">
 
               <div class="col-md-12">
-                <h5>Želáte si text do hrebeňa?</h5>
-                <input class="m-3" type="radio" name="text" id="textYes" onclick="showText()"><label for="">Áno</label>
-                <input class="m-3" type="radio" name="text" id="textNo" onclick="hideText()"><label for="">Nie</label>
-                <input class="form-control" type="textarea" id="textKlucenka" onkeyup="controlText()">
+                <h5>Želáte si text do záložky?</h5>
+                <input class="m-3" type="radio"  id="textYes" onclick="showText()"><label for="">Áno</label>
+                <input class="m-3" type="radio"  id="textNo" onclick="hideText()"><label for="">Nie</label>
+                <input class="form-control" name="text" type="textarea" id="textKlucenka" onkeyup="controlText()">
                 <p id="upozornenieText">Maximálne 7 znakov</p>
                 <p id="klucenkaHelp"></p>
               </div>
@@ -227,7 +227,7 @@
         </div>
         <div class="col-md-1 mt-4"></div>
       </div>
-     <div class="container">
+      <div class="container">
         <div class="row text-center">
           <button id="button" type="submit" class="btn btn-dark">Odoslať</button>
         </div>

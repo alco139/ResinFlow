@@ -8,6 +8,11 @@ var checks = document.querySelectorAll(".pigment");
 var max = 2;
 for (var i = 0; i < checks.length; i++)
     checks[i].onclick = pigmentCheck;
+    // MAX 2 OVOCIA
+var checks = document.querySelectorAll(".ovocie");
+var max = 2;
+for (var i = 0; i < checks.length; i++)
+    checks[i].onclick = ovocieCheck;
 
 // SCHOVAJ OSTATNE KVETY
 var images = document.getElementsByClassName('kvet');
@@ -15,9 +20,13 @@ for (i = 0; i < images.length; i++) {
     console.log("schovane")
     images[i].style.display = "none";
 }
-// document.getElementById("ruzova-margaretka").style.display = 'block';
+document.getElementById("ruzova-margaretka").style.display = 'block';
 
-
+function ovocieCheck(event) {
+    var checkedChecks = document.querySelectorAll(".ovocie:checked");
+    if (checkedChecks.length >= max + 1)
+        return false;
+}
 function selectiveCheck(event) {
     var checkedChecks = document.querySelectorAll(".check:checked");
     if (checkedChecks.length >= max + 1)
