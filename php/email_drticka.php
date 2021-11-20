@@ -8,7 +8,7 @@
   $houseNumber = $_POST['cislo_domu'];
   $postalCode = $_POST['psc'];
   $visitor_email = $_POST['email'];
-
+  $doprava = $_POST['doprava'];
 
 
 
@@ -22,7 +22,8 @@
     Mesto:".$city.
     "Adresa:".$adress. "".$houseNumber."
     PSC:".$postalCode.
-    "Inspiracia:".$inspiracia. "";
+    "Inspiracia:".$inspiracia.
+    "Doprava:".$doprava. "";
 
     var_dump($message);
     $subject = 'Objednávka Drtičky';
@@ -36,13 +37,13 @@
 
 
 
-//   $retval = mail($to,$subject,$message);
+  $retval = mail($to,$subject,$message);
   
   
-//   if( $retval == true ) {
-//     echo "Message sent successfully...";
-//  }else {
-//     echo "Message could not be sent...";
-//  }
+  if( $retval == true ) {
+    echo "Message sent successfully...";
+ }else {
+    echo "Message could not be sent...";
+ }
   
 // ?>

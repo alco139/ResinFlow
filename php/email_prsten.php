@@ -8,10 +8,11 @@
   $houseNumber = $_POST['cislo_domu'];
   $postalCode = $_POST['psc'];
   $visitor_email = $_POST['email'];
+  $doprava = $_POST['doprava'];
 
   $farba = $_POST['farba'];
   $pozlatko = $_POST['druh_pozlatka_prsten'];
-
+  $velkost = $_POST['velkost_prstena'];
 
   $subject = 'Objednávka prsteňa';
   $message = "Meno:".$name. "
@@ -20,8 +21,10 @@
               Mesto:".$city.
               "Adresa:".$adress. "".$houseNumber."
               PSC:".$postalCode.
+              "Doprava:".$doprava.
               "Farba:".$farba. "
-              Pozlatko:".$pozlatko. "";
+              Pozlatko:".$pozlatko.
+              "Velkost:".$velkost. "";
 
 var_dump($message);
 //   $retval = mail($to,$subject,$message);

@@ -1,8 +1,6 @@
 body{
     background-color: #131011;
-    /* background-image: url(wallpaper.jpeg); */
-    /* overflow: hidden;
-    position: relative; */
+    font-family: 'Times New Roman', Times, serif !important;
 }
 .nadpis{
     font-size: 4em;
@@ -22,6 +20,9 @@ h1{
 img{
     width: 25em;
     height: 30em;
+}
+.uvodny_text{
+    font-size: 1.3em !important;
 }
 @media only screen and (max-width: 600px) {
     .splide__slide img {
@@ -45,18 +46,21 @@ img{
         width: 2rem !important;
         height: 2rem !important;
     }
+    .uvodny_text{
+        font-size: 1em !important;
+    }
   }
 
 
 #nadpis{
     /* font-family: 'Caveat', cursive; */
     /* font-family: 'Parisienne', cursive; */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
     font-size: 6rem !important;
     /* color: black !important;             */
 }
 h3{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 #instagram{
     display: flex;

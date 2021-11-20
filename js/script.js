@@ -3,14 +3,14 @@ var checks = document.querySelectorAll(".check");
 var max = 2;
 for (var i = 0; i < checks.length; i++)
     checks[i].onclick = selectiveCheck;
-// MAX 2 PIGMENTY
+// MAX 3 PIGMENTY
 var checks = document.querySelectorAll(".pigment");
-var max = 2;
+var max = 3;
 for (var i = 0; i < checks.length; i++)
     checks[i].onclick = pigmentCheck;
     // MAX 2 OVOCIA
 var checks = document.querySelectorAll(".ovocie");
-var max = 2;
+var max = 3;
 for (var i = 0; i < checks.length; i++)
     checks[i].onclick = ovocieCheck;
 

@@ -2,6 +2,8 @@ body{
     /* background-color: #880e4f; */
     background-image: url(../images/wallpaper.jpeg);
     opacity: 1;
+    font-family: 'Times New Roman', Times, serif !important;
+
 }
 .formDiv{
     margin-top: 60px;

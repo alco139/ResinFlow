@@ -98,11 +98,24 @@
             </div>
           </div>
 
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="doprava">Doprava</label>
+                <select class="form-control selcls pozlatka" name="doprava" id="druh-pozlatka">
+                  <option value="Ruzinov" selected>Osobné vyzdvihnutie - BA, Chlumeckého 5, 82103 Ružinov</option>
+                  <option value="Vrakuna">Osobné vyzdvihnutie - BA, Slatinská 28, 82107 Vrakuňa</option>
+                  <option value="Dobierka">Dobierka (Poštovné + balné) + 3.20€</option>
+
+                </select>
+              </div>
+            </div>
+          </div>
 
 
           <div id="inspiracie">
             <div class="form-check">
-              <h2>Vyberte si z našich inšpirácií</h2>
+              <h2>Vyberte si z našich inšpirácií - 7€</h2>
               <div class="row">
                 <div class="col-md-4">
                   <div class="radio">
@@ -126,15 +139,15 @@
               </div>
             </div>
           </div>
-          <h1>Vlastný dizajn</h1>
+          <h2>VLASTNÝ DIZAJN - Základ 6€</h2>
           <input type="checkbox" id="switch"
                       class="checkbox"  onclick="showDesign()"/>
           <label for="switch" class="toggle">
     
           </label>
-          <div class="ownDesign" id="ownDesign">
+          <div class="ownDesign mt-5" id="ownDesign">
 
-            <h4>Výber pozlátok</h4>
+            <h4>VÝBER POZLÁTOK + 0.00€</h4>
             <div id="pozlatka">
 
               <div class="col-md-6">
@@ -154,7 +167,7 @@
 
 
             </div>
-            <h4 class="mt-3">Výber margarétok</h4>
+            <h4 class="mt-3">VÝBER MARGARÉTOK + 2.00€(v cene je zahrnutý výber 2 možností)</h4>
             <div id="margarety" class="mt-5">
 
               <div class="col-md-6">
@@ -184,11 +197,11 @@
               </div>
             </div>
 
-            <h4 class="mt-3">Výber pigmentov</h4>
+            <h4 class="mt-3">VÝBER PIGMENTOV + 0.50€(v cene je zahrnutý výber 3 možností).</h4>
             <div id="pigment" class="mt-5">
 
               <div class="col-md-6">
-                <img class="ilustracia" src="../images/image00017.jpeg" alt="">
+                <img class="ilustracia" src="../images/pigmenty.jpeg" alt="">
               </div>
               <div class="col-md-6">
                 <div class="vyberMargaretok">
@@ -204,23 +217,6 @@
                 </div>
               </div>
             </div>
-
-
-            
-            <div id="ovocie" class="mt-5">
-
-              <div class="col-md-12">
-                <h5>Želáte si text do záložky?</h5>
-                <input class="m-3" type="radio"  id="textYes" onclick="showText()"><label for="">Áno</label>
-                <input class="m-3" type="radio"  id="textNo" onclick="hideText()"><label for="">Nie</label>
-                <input class="form-control" name="text" type="textarea" id="textKlucenka" onkeyup="controlText()">
-                <p id="upozornenieText">Maximálne 7 znakov</p>
-                <p id="klucenkaHelp"></p>
-              </div>
-
-            </div>
-
-
           </div>
 
 

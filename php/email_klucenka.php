@@ -8,7 +8,7 @@
   $houseNumber = $_POST['cislo_domu'];
   $postalCode = $_POST['psc'];
   $visitor_email = $_POST['email'];
-
+  $doprava = $_POST['doprava'];
 
 
 
@@ -22,13 +22,13 @@
     Mesto:".$city.
     "Adresa:".$adress. "".$houseNumber."
     PSC:".$postalCode.
+    "Doprava:".$doprava.
     "Inspiracia:".$inspiracia. "";
   }
   else{
     $pozlatko = $_POST['druh_pozlatka'];
     $mermaid = $_POST['Mermaid'];
     $cukriky = $_POST['cukriky'];
-    $text = $_POST['text'];
     if(isset($_POST['Margareta'])){
         $margareta = implode(",",$_POST['Margareta']);
     }
@@ -48,10 +48,10 @@
     Mesto:".$city.
     "Adresa:".$adress. "".$houseNumber."
     PSC:".$postalCode.
-    "Mermaid:".$mermaid. "
-    Pozlatko:".$pozlatko.
-    "Cukriky:".$cukriky. "
-    Text:".$text.
+    "Mermaid:".$mermaid.
+    "Doprava:".$doprava.
+    "Pozlatko:".$pozlatko.
+    "Cukriky:".$cukriky. 
     "Margarety:".$margareta. "
     Ovocie:".$ovocie. "";
   }
