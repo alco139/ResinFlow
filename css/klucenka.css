@@ -60,8 +60,8 @@ input{
       margin-top: 0;
     }
     .ilustracia{
-        width: 80%;
-        height: 80%;
+        width: 110% !important;
+        height: 110% !important;
     }
     .vyberMargaretok{
         display: flex;
